@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/es",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "dist/types",
+    "target": "es2018",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@recipes/*": ["./src/recipes/*"],
+      "@stories/*": ["./src/stories/*"],
+      "@styled/*": ["./styled-system/*"]
+    }
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "./types/*.ts", "styled-system"],
+  "exclude": ["node_modules"]
+}

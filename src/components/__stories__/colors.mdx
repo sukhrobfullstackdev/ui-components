@@ -1,0 +1,91 @@
+import { ColorItem, ColorPalette, Meta, Title } from '@storybook/blocks';
+import { token } from '../../../styled-system/tokens';
+
+<Meta title="Colors" />
+
+<ColorPalette>
+  <ColorItem
+    title="Brand"
+    subtitle="brand colors"
+    colors={{
+      Lightest: token('colors.brand.lightest'),
+      Lighter: token('colors.brand.lighter'),
+      Base: token('colors.brand.base'),
+      Darker: token('colors.brand.darker'),
+      Darkest: token('colors.brand.darkest'),
+    }}
+  />
+  <ColorItem
+    title="Surface"
+    subtitle="surface colors"
+    colors={{
+      Primary: token('colors.surface.primary'),
+      Secondary: token('colors.surface.secondary'),
+      Tertiary: token('colors.surface.tertiary'),
+    }}
+  />
+  <ColorItem
+    title="Text"
+    subtitle="text colors"
+    colors={{
+      Primary: token('colors.text.primary'),
+      Secondary: token('colors.text.secondary'),
+      Tertiary: token('colors.text.tertiary'),
+      Quaternary: token('colors.text.quaternary'),
+    }}
+  />
+  <ColorItem
+    title="Neutral"
+    subtitle="neutral colors"
+    colors={{
+      Primary: token('colors.neutral.primary'),
+      Secondary: token('colors.neutral.secondary'),
+      Tertiary: token('colors.neutral.tertiary'),
+      Quaternary: token('colors.neutral.quaternary'),
+    }}
+  />
+  <ColorItem
+    title="Positive"
+    subtitle="positive colors"
+    colors={{
+      Lightest: token('colors.positive.lightest'),
+      Lighter: token('colors.positive.lighter'),
+      Base: token('colors.positive.base'),
+      Darker: token('colors.positive.darker'),
+      Darkest: token('colors.positive.darkest'),
+    }}
+  />
+  <ColorItem
+    title="Negative"
+    subtitle="negative colors"
+    colors={{
+      Lightest: token('colors.negative.lightest'),
+      Lighter: token('colors.negative.lighter'),
+      Base: token('colors.negative.base'),
+      Darker: token('colors.negative.darker'),
+      Darkest: token('colors.negative.darkest'),
+    }}
+  />
+  <ColorItem
+    title="Warning"
+    subtitle="warning colors"
+    colors={{
+      Lightest: token('colors.warning.lightest'),
+      Lighter: token('colors.warning.lighter'),
+      Base: token('colors.warning.base'),
+      Darker: token('colors.warning.darker'),
+      Darkest: token('colors.warning.darkest'),
+    }}
+  />
+  <ColorItem
+    title="Dedicated"
+    subtitle="dedicated colors"
+    colors={{
+      Lightest: token('colors.dedicated.lightest'),
+      Lighter: token('colors.dedicated.lighter'),
+      Base: token('colors.dedicated.base'),
+      Darker: token('colors.dedicated.darker'),
+      Darkest: token('colors.dedicated.darkest'),
+    }}
+  />
+</ColorPalette>
